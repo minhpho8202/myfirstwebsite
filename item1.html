@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>fproject</title>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/item.js"></script>
+        <link href="/hinhanh/planet-earth.png" rel="icon"/>
+        <link href="/css/item.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+    </head>
+    <body onload="init()">
+      <header>
+        <div>
+            <i class="fas fa-bars icontool">
+                <ul class="subcontent">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clothes.html">Clothes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="game.html">Game</a></li>
+                </ul>
+            </i>
+            <!-- <i class="fas fa-shopping-cart iconcart"></i> -->
+            <div id="header">
+                <hr id="hrleft" color="black">
+                <a href="index.html"><h1 id="brand">FProject</h1></a>
+                <hr id="hrright" color="black">
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="main">
+          <div class="pic">
+            <img src="/hinhanh/tee2a.jpeg" id="mainImg" alt="tee" />
+            <div class="thumb">
+              <div><img src="/hinhanh/tee2a.jpeg" alt="tee" class="thumbimg" /></div>
+              <div><img src="/hinhanh/tee2b.jpeg" alt="tee" class="thumbimg" /></div>
+              <div><img src="/hinhanh/tee2c.jpeg" alt="tee" class="thumbimg" /></div>
+              <div><img src="/hinhanh/tee2d.jpeg" alt="tee" class="thumbimg" /></div>
+              <div><img src="/hinhanh/tee2e.jpeg" alt="tee" class="thumbimg" /></div>
+            </div>
+          </div>
+              <div class="iteminfor">
+                  <h1>Black T-shirt</h1>
+                  <p><b>Price: 200,000<sup>đ</sup></b></p>
+                  <hr color="black">
+                  <form>
+                    <p><b>Size:</b></p>
+                    <select>
+                    <option>Size 0</option>
+                    <option>Size 1</option>
+                    <option>Size 2</option>
+                    <option>Size 3</option>
+                    <option>Size 4</option>
+                    </select>
+                  </form>
+                  <hr color="black">
+                  <ul>
+                      <li><b>Thông tin sản phẩm:</b></li>
+                      <li>Name: Black T-shirt</li>
+                      <li>Color: Black</li>
+                      <li>Size: 0/1/2/3/4</li>
+                      <li>Material: 100% Cotton</li>
+                  </ul>
+                  <hr color="black">
+                  <ul>
+                    <li><b>Size chart:</b></li>
+                    <li>size 0 : Dưới 1m65, Cân Nặng Dưới 55 kg</li>
+                    <li>Size 1 : Chiều Cao Từ 1m65 , Cân Nặng trên 55 kg</li>
+                    <li>Size 2 : Chiều Cao từ 1m65-  1 m 72, Cân Nặng Dưới 65 kg</li>
+                    <li>Size 3 : Chiều Cao từ 1m70-  1m77 , Câng Nặng Dưới 80 kg</li>
+                    <li>Size 4 : Chiều Cao Trên 1m72, Cân Nặng dưới  100 kg</li>
+                </ul>
+                <!-- <button><b>ADD TO CART</b></button> -->
+                <input type="button" value="ADD TO CART" onclick="alert('Đã Thêm Vào Giỏ Hàng')"/>
+              </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer">
+          <hr color="black">
+          <div class="footer1">
+          <div>
+          <p class="infor">Liên hệ</p>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Youtube</a></li>
+                  <li><a href="#">Twitter</a></li>
+              </ul>
+          </div>
+          <div >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9352036098476!2d106.67562381535645!3d10.816270761413332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1630755473058!5m2!1svi!2s" class="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>          </div>
+          </div>
+          <div class="copy">
+          <hr color="black">
+          <p class="copyright"><strong>Copyright &copy; 2021</strong></p>
+          </div>
+      </div>
+    </footer>
+    </body>
+</html>
