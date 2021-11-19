@@ -6,9 +6,9 @@ body {
     background-repeat: no-repeat;
     background-position:center 15vw;
     position: relative; */
-    background-image: url(../hinhanh/slideshow_2.jpg);
+    /* background-image: url(../hinhanh/slideshow_2.jpg);
     background-repeat: no-repeat;
-    background-position: 0 0 0 0;
+    background-position: 0 0 0 0; */
 }
 
 
@@ -87,6 +87,51 @@ ul > li > a:hover {
     background-color: #89CFF0;
 }
 
+h1.title {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+}
+
+h1.title::after{
+    content: "--o0o--";
+    display: block;
+    font-size: 20px;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.course {
+    background-image: url(/hinhanh/blog1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    padding: 20%;
+}
+
+div.text {
+    font-weight: bold;
+}
+
+.col-70 {
+    width: 70%;
+    margin: auto;
+}
+
+div.bg {
+    margin-top: 1%;
+}
+
+div.bg > img {
+    width: 100%;
+}
+
 a.gts {
     font-weight: bold;
     position: absolute;
@@ -98,26 +143,68 @@ a.gts {
     left: 45vw;
     /* margin-left: 45%; */
     top: 800px;
+    animation: animation 1s infinite;
+}
+
+@keyframes animation {
+    0%{background-color: #89CFF0;}
+    100%{background-color: black;color: #89CFF0;}
+}
+
+.copyright{
+    text-align: center;
+}
+
+.infor{
+    font-size: 25px;
+    overflow:auto;
+}
+
+p.infor ~ ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+p.infor ~ ul > li {
+    display: block;
+    padding: 10px;
+}
+.footer > iframe {
+    height: 200px;
+    margin-left: 0px;
+}
+.copy {
+    clear: left;
+    height: 40px;
+}
+
+.footer1 {
+    display: flex;
+    justify-content:flex-start;
+}
+
+#gototop {
+    text-decoration: none;
+    display: block;
+    padding: 15px 15px;
+    background-color: #89CFF0;
+    color: black;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 5px 5px;
+    z-index: 9999;
+    display: none;
+}
+
+.map {
+    width: 800px;
+    height: 100%;
 }
 
 
 
-@media screen and (max-width: 900px){
-    body {
-        background-position: top;
-    }
-}
 
-@media screen and (max-width: 600px){
-    body {
-        background-position: top;
-    }
-    #brand {
-        font-size: 90px;
-    }
 
-    a.gts {
-        top: 350px;
-        left: 120px;
-    }
-}
+

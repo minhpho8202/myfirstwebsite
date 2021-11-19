@@ -105,6 +105,7 @@ div.item {
     width: 23%;
     margin: 1%;
     transition: transform 0.3s;
+    position: relative;
 }
 
 div.items{
@@ -120,6 +121,7 @@ div.item > img {
     width: 100%;
     box-shadow: #89CFF0 0px 0px 10px;
 }
+
 
 div.item:hover {
     transform: skew(-2.5deg,2.5deg);
@@ -138,6 +140,7 @@ div.item > p {
     font-family: monospace;
     text-shadow: #89CFF0 0px 0px 10px;
 }
+
 
 * {
     box-sizing: border-box;
@@ -194,6 +197,7 @@ p.infor ~ ul > li {
     width: 800px;
     height: 100%;
 }
+
 
 @media screen and (max-width: 1800px){
 }

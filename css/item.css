@@ -190,6 +190,40 @@ select {
     font-weight: bold;
 }
 
+section > p {
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.item {
+    width: 19%;
+}
+
+div.item:hover {
+    transform: skew(-2.5deg,2.5deg);
+}
+
+div.item > a > img {
+    width: 100%;
+}
+
+div.item > h1 {
+    font-family: monospace;
+    text-align: center;
+}
+
+div.item > p {
+    font-family: monospace;
+    text-align: center;
+}
 
 @media screen and (max-width: 1800px){
 
@@ -206,6 +240,10 @@ select {
 
     .iteminfor {
         width: 45%;
+    }
+
+    div.item {
+        width: 30%;
     }
 }
 
@@ -229,5 +267,9 @@ select {
     .main {
         flex-direction: column;
         align-items: center;
+    }
+
+    div.item {
+        width: 49%;
     }
 }

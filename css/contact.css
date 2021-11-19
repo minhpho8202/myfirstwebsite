@@ -165,6 +165,22 @@ div.mainmap > iframe {
     width: 100%;
 }
 
+div.store {
+    width: 70%;
+    margin: auto;
+}
+
+div.store > p {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+}
+
+div.store > div > img {
+    width: 100%;
+}
+
 @media screen and (max-width: 1800px){
 
 }

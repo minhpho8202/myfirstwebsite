@@ -2,20 +2,54 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>fproject</title>
         <link href="hinhanh/planet-earth.png" rel="icon"/>
-        <link href="css/project.css" rel="stylesheet" />
+        <link href="css/blog.css" rel="stylesheet" />
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/blog.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#gototop").hide()
+
+                $(window).scroll(function() {
+
+                    if ($(this).scrollTop() >= 1) {
+                        $("#header0").css({
+                            "position": "fixed",
+                            "left" :8,
+                            "right" :8,
+                            "z-index": 999,
+                        })
+                    } else {
+                        $("#header0").css({
+                            "position": "relative",
+                            "left" :0,
+                            "right" :0,
+                            "z-index": 999,
+                        })
+                    }
+                    if ($(this).scrollTop() >= 100)
+                        $("#gototop").show("slow")
+                    else
+                        $("#gototop").hide("slow")
+                })
+                $("#gototop").click(function() {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 500)
+                })
+            })
+        </script>
     </head>
     <body>
         <header>
-            <div class="animate__animated animate__bounceInDown">
-                <i class="fas fa-bars icontool">
-                    <ul class="subcontent">
+            <div class="animate__animated animate__backInDown">
+                <i class="fas fa-bars icontool" id="tool">
+                    <ul class="subcontent" id="menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="clothes.html">Clothes</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -29,7 +63,60 @@
                     <hr id="hrright" color="black">
                 </div>
             </div>
-            <a href="clothes.html" class="gts">SHOPPING NOW !!!</a>
         </header>
+        <div class="bg"><img src="/hinhanh/slideshow_2.jpg"></div>
+        <a href="clothes.html" class="gts">SHOPPING NOW !!!</a>
+        <section class="col-70">
+            <h1 class="title">Giới thiệu</h1>
+            <div class="text">
+            <p style="text-align: center;">Levents - Tên thương hiệu được lấy cảm hứng từ câu nói “ "Le vent se lève, il faut tenter de vivre “&nbsp;</p>
+            <p style="text-align: center;">có nghĩa là&nbsp;ngọn gió.&nbsp;<br>Levents® là 1 trong những nhãn hiệu thời trang dạo phố hàng đầu tại Việt Nam. Phát triển dựa vào 3 phương châm: Trendy - Good Price - Must have. Levents&nbsp;đem đến người dùng những trang phục dạo phố độc đáo với xu hướng mới nhất, chất lượng cao và giá cả phải chăng.</p>
+            <p style="text-align: center;">Bắt đầu hoạt động trong lĩnh vực streetwear từ năm 2017 với một cửa hàng tại TP.HCM, thương hiệu này nhanh chóng thu hút sự chú ý nhờ lợi thế đa dạng sản phẩm. Đến năm 2019, với những phản hồi và góp ý quan trọng từ khách hàng, Levents đã chính thức ra đời, bắt đầu thiết kế và sản xuất những mẫu quần áo, phụ kiện mang tên thương hiệu mình, đồng thời bắt tay xây dựng thương hiệu chặt chẽ từ mặt thiết kế đến mô hình kinh doanh.</p>
+            <p style="text-align: center;">Năm 2020, thương hiệu mở rộng phạm vi sản xuất và có tổng cộng 3 cửa hàng tại Việt Nam.</p>
+            </div>
+            <div class="course">
+            </div>
+            <h1 class="title">Văn Hóa</h1>
+            <div class="text">
+                <p style="text-align: center;">LEVENTS luôn chú trọng đến văn hoá làm việc tại công ty . Tôn trọng sự sáng tạo và đột phá trong từng cá nhân, chúng tôi xây dựng văn hoá làm việc hiện đại, tiên tiến và lành mạnh, luôn hướng tới công ty hàng đầu&nbsp;trong lĩnh vực&nbsp;thời trang.</p>
+                <p style="text-align: center;">&nbsp;</p>
+                <p style="text-align: center;">Tài sản lớn nhất của LEVENTS là con người, vì vậy chúng tôi luôn có các chính sách để phát triển năng lực của từng cá nhân, và tạo điều kiện phát triển cho các nhân sự có tài năng, chúng tôi ưu tiên nhiều cho các tài năng trẻ, đào tạo các bạn từ còn đang học trên ghế nhà trường đến lúc bạn có thể làm việc trực tiếp tại công ty.</p>
+            </div>
+            <h1 class="title">Giá Trị Cốt Lỗi</h1>
+            <div class="text">
+                <p><b><i>SÁNG TẠO:&nbsp;</i></b>Vì là trong lĩnh vực thời trang dành cho giới trẻ và cập nhật xu hương mới nhất nên luôn hướng đến sự sáng tạo để tạo nên những giá trị mới cho khách hàng và cho chính nhân viên. Vì lẽ đó, không gian làm việc tại&nbsp; Levents&nbsp; luôn được ban lãnh đạo đầu tư, thiết kế với thật nhiều không gian mở để các thành viên thỏa sức sáng tạo với cơ sở vật chất hiện đại, thân thiện môi trường.</p>
+                <p>&nbsp;</p>
+                <p><b><i>TỬ TẾ:</i></b>&nbsp;Công ty luôn dành sự tôn trọng đến đội ngũ nhân viên, xây dựng tính nhân văn trong mỗi suy nghĩ và hành động.&nbsp;&nbsp;</p>
+                <p>&nbsp;</p>
+                <p><b><i>CHĂM CHỈ :</i></b>&nbsp;Chúng tôi không ngại thử thách, hết lòng làm việc một cách hăng hái, luôn có trách nhiệm hoàn thành sứ mệnh của mình. Song đó, chúng tôi luôn tạo ra sân chơi, sự kiện lành mạnh cho các thành viên tại công ty.</p>
+                <p>&nbsp;</p>
+                <p><b><i>KỶ LUẬT:&nbsp;</i></b>Với tiêu chí “Kỷ luật là sợi dây kết nối giữa ước mơ và hiện thực”, LEVENTS luôn nâng cao tinh thần tự giác, tuân thủ quy định, ý thức trách nhiệm của mỗi cá nhân với trọng trách được giao.</p>
+            </div>
+            <div>
+                <a id="gototop" href="javascript:;"><i class="fas fa-angle-double-up"></i></a>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <hr color="black">
+                <div class="footer1">
+                <div>
+                <p class="infor">Liên hệ</p>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9352036098476!2d106.67562381535645!3d10.816270761413332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1630755473058!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>            </div>
+                </div>
+                <div class="copy">
+                <hr color="black">
+                <p class="copyright"><strong>Copyright &copy; 2021</strong></p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
