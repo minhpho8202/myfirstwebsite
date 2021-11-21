@@ -142,13 +142,18 @@ a.gts {
     /* top: 43vw; */
     left: 45vw;
     /* margin-left: 45%; */
-    top: 800px;
+    top: 600px;
     animation: animation 1s infinite;
 }
 
 @keyframes animation {
     0%{background-color: #89CFF0;}
     100%{background-color: black;color: #89CFF0;}
+}
+
+@keyframes animation1 {
+    0%{color: black;}
+    100%{color: #89CFF0;}
 }
 
 .copyright{
@@ -202,6 +207,20 @@ p.infor ~ ul > li {
     width: 800px;
     height: 100%;
 }
+
+#gotobot {
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    font-size: 150px;
+    color: black;
+    position: absolute;
+    left: 45vw;
+    top: 650px;
+    z-index: 9999;
+    animation: animation1 1s infinite;
+}
+
 
 
 

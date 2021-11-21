@@ -10,40 +10,7 @@
         />
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/blog.js"></script>
-        <script>
-            $(document).ready(function() {
-                $("#gototop").hide()
-
-                $(window).scroll(function() {
-
-                    if ($(this).scrollTop() >= 1) {
-                        $("#header0").css({
-                            "position": "fixed",
-                            "left" :8,
-                            "right" :8,
-                            "z-index": 999,
-                        })
-                    } else {
-                        $("#header0").css({
-                            "position": "relative",
-                            "left" :0,
-                            "right" :0,
-                            "z-index": 999,
-                        })
-                    }
-                    if ($(this).scrollTop() >= 100)
-                        $("#gototop").show("slow")
-                    else
-                        $("#gototop").hide("slow")
-                })
-                $("#gototop").click(function() {
-                    $("html, body").animate({
-                        scrollTop: 0
-                    }, 500)
-                })
-            })
-        </script>
+        <script src="js/index.js"></script>
     </head>
     <body>
         <header>
@@ -66,6 +33,7 @@
         </header>
         <div class="bg"><img src="hinhanh/slideshow_2.jpg"></div>
         <a href="clothes.html" class="gts">SHOPPING NOW !!!</a>
+        <a id="gotobot" href="javascript:;"><i class="fas fa-arrow-down"></i></a>
         <section class="col-70">
             <h1 class="title">Giới thiệu</h1>
             <div class="text">
