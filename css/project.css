@@ -49,12 +49,6 @@ a {
     font-size: 25px;
 }
 
-/* .iconcart {
-    position: relative;
-    left: 1850px;
-    top: 75px;
-    font-size: 25px;
-} */
 
 ul {
     list-style-type: none;
@@ -99,11 +93,6 @@ h1.title::after{
     font-size: 20px;
 }
 
-.d-flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
 .course {
     background-image: url(../hinhanh/blog1.jpg);
@@ -156,39 +145,6 @@ a.gts {
     100%{color: #89CFF0;}
 }
 
-.copyright{
-    text-align: center;
-}
-
-.infor{
-    font-size: 25px;
-    overflow:auto;
-}
-
-p.infor ~ ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    float: left;
-}
-p.infor ~ ul > li {
-    display: block;
-    padding: 10px;
-}
-.footer > iframe {
-    height: 200px;
-    margin-left: 0px;
-}
-.copy {
-    clear: left;
-    height: 40px;
-}
-
-.footer1 {
-    display: flex;
-    justify-content:flex-start;
-}
-
 #gototop {
     text-decoration: none;
     display: block;
@@ -203,10 +159,6 @@ p.infor ~ ul > li {
     display: none;
 }
 
-.map {
-    width: 800px;
-    height: 100%;
-}
 
 #gotobot {
     text-decoration: none;
@@ -220,6 +172,94 @@ p.infor ~ ul > li {
     z-index: 9999;
     animation: animation1 1s infinite;
 }
+
+div.infor {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+div.social {
+    width: 33%;
+}
+
+div.social > ul > li > i {
+    font-size: 40px;
+}
+
+div.contact {
+    width: 33%;
+}
+
+div.contact > ul > li > i {
+    font-size: 40px;
+}
+
+div.map {
+    width: 33%;
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+.copy {
+    clear: left;
+    height: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1800px){
+}
+
+@media screen and (max-width: 900px){
+    a.gts {
+        top: 450px;
+        left:300px;
+    }
+    #gotobot {
+        top: 500px;
+        left:310px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #brand {
+        font-size: 75px;
+    }
+    div.infor {
+        width: 90%;
+    }
+
+    div.social {
+        width: 95%;
+    }
+    div.contact {
+        width: 95%;
+    }
+    div.map {
+        width: 95%;
+    }
+
+    section.col-70 {
+        width: 100%;
+    }
+
+    a.gts {
+        top: 250px;
+        left:100px;
+    }
+    #gotobot {
+        top: 300px;
+        left:110px;
+    }
+}
+
 
 
 

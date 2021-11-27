@@ -67,12 +67,16 @@
                   <ul>
                     <li><b>Size chart:</b></li>
                     <li>size 0 : Dưới 1m65, Cân Nặng Dưới 55 kg</li>
-                    <li>Size 1 : Chiều Cao Từ 1m65 , Cân Nặng trên 55 kg</li>
+                    <li>Size 1 : Chiều Cao Từ 1m65 , Cân Nặng dưới 55 kg</li>
                     <li>Size 2 : Chiều Cao từ 1m65-  1 m 72, Cân Nặng Dưới 65 kg</li>
                     <li>Size 3 : Chiều Cao từ 1m70-  1m77 , Câng Nặng Dưới 80 kg</li>
                     <li>Size 4 : Chiều Cao Trên 1m72, Cân Nặng dưới  100 kg</li>
                 </ul>
-                <!-- <button><b>ADD TO CART</b></button> -->
+                <input type="text" id="chieuCao" placeholder="Chieu cao (cm)" />
+                <input type="text" id="canNang" placeholder="Can Nang (kg)" />
+                <input type="button" value="Check" onclick="sizeCheck()" />
+                <br>
+                <br>
                 <input type="button" value="ADD TO CART" onclick="alert('Đã Thêm Vào Giỏ Hàng')"/>
               </div>
         </div>
@@ -106,27 +110,36 @@
             </div>
           </div>
       </section>
-      <nav>
-        <div class="footer">
-          <hr color="black">
-          <div class="footer1">
-          <div>
-          <p class="infor">Liên hệ</p>
-              <ul>
-                  <li><a href="#">Facebook</a></li>
-                  <li><a href="#">Instagram</a></li>
-                  <li><a href="#">Youtube</a></li>
-                  <li><a href="#">Twitter</a></li>
-              </ul>
-          </div>
-          <div >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9352036098476!2d106.67562381535645!3d10.816270761413332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1630755473058!5m2!1svi!2s" class="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>          </div>
-          </div>
-          <div class="copy">
-          <hr color="black">
-          <p class="copyright"><strong>Copyright &copy; 2021</strong></p>
-          </div>
-      </div>
-    </nav>
+      <footer>
+        <hr color="black">
+        <div class="infor">
+            <div class="social">
+                <h1>Social</h1>
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h1>Contact</h1>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i></li>
+                    <li><i class="fas fa-mobile-alt"></i></li>
+                    <li><i class="far fa-envelope"></i></li>
+                </ul>
+            </div>
+            <div class="map">
+                <h1>Map</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9250508686623!2d106.67491891533437!3d10.817047661399183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e1f241211f%3A0xc9ef195798144b1f!2zxJDhuqFpIGjhu41jIE3hu58gVFAuSENN!5e0!3m2!1svi!2s!4v1638007824372!5m2!1svi!2s"  height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="copy">
+        <hr color="black">
+        <p class="copyright"><strong>Copyright &copy; 2021</strong></p>
+        </div>
+        </div>
+    </footer>
     </body>
 </html>
