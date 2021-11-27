@@ -22,7 +22,7 @@ $(document).ready(function(){
     a = parseFloat(a)
     b = parseFloat(b)
 
-    if (a < 165 && b < 55){
+    if (a < 165 && b <= 55){
       alert("Size 0")
     }
     else {
