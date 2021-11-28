@@ -35,7 +35,7 @@ $(document).ready(function() {
         }, 1000)
     })
 
-    $("div.text p").addClass("wow animate__backInDown")
+    $("div.text p").addClass("wow animate__fadeInLeft")
 
     wow = new WOW(
         {

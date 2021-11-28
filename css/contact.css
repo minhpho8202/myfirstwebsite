@@ -98,7 +98,13 @@ ul.menubar > li > a {
     padding: 20px;
 }
 
+input {
+    padding: 5px;
+}
 
+button {
+    padding: 5px;
+}
 
 * {
     box-sizing: border-box;
