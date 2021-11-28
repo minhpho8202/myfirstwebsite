@@ -43,10 +43,11 @@ $(document).ready(function() {
       )
       wow.init();
 
+    
     $(".btnAdd").click(function(){
         var img = $("div.item > a > img").attr("src")
-        var name = $("div.item > a > h1").text()
-        var price = $("div.item > a > p").text()
+        var name = $("div.item > a > h1").html()
+        var price = $("div.item > a > p").html()
         
         $(".cart-items").prepend(`
             <div class="cart-item">
@@ -59,7 +60,7 @@ $(document).ready(function() {
                 </div>
                 <div class="col-20">
                     <p>Price:</p>
-                    <span>${price}<sup>đ</sup></span>
+                    <span>${price}</span>
                 </div>
                 <div class="col-20">
                     <input type="button" value="Delete">
@@ -71,4 +72,6 @@ $(document).ready(function() {
     $("div.cart-items").on("click", "div.cart-item > div > input[type=button]", function(){
         $(this).parent().parent().remove()
     })
+
 })
+

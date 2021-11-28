@@ -129,14 +129,14 @@ div.item:hover {
 }
 
 div.item  h1 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 20px;
     font-family: monospace;
     text-shadow: #89CFF0 0px 0px 10px;
 }
 
 div.item  p {
-    text-align: center;
+    /* text-align: center; */
     font-size: 15px;
     font-family: monospace;
     text-shadow: #89CFF0 0px 0px 10px;
@@ -312,6 +312,11 @@ ul > li {
 
     div.text > span {
         animation: move 5s infinite linear;
+    }
+
+    .my-cart {
+        width: 90%;
+        margin: auto;
     }
 
 }
