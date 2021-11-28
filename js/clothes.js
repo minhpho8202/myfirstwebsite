@@ -42,4 +42,33 @@ $(document).ready(function() {
       }
       )
       wow.init();
+
+    $(".btnAdd").click(function(){
+        var img = $("div.item > a > img").attr("src")
+        var name = $("div.item > a > h1").text()
+        var price = $("div.item > a > p").text()
+        
+        $(".cart-items").prepend(`
+            <div class="cart-item">
+                <div class="col-20">
+                    <img src="${img}"/>
+                </div>
+                <div class="col-20">
+                    <p>Name:</p>
+                    <span>${name}</span>
+                </div>
+                <div class="col-20">
+                    <p>Price:</p>
+                    <span>${price}<sup>đ</sup></span>
+                </div>
+                <div class="col-20">
+                    <input type="button" value="Delete">
+                </div>
+            </div>
+        `)
+    })
+
+    $("div.cart-items").on("click", "div.cart-item > div > input[type=button]", function(){
+        $(this).parent().parent().remove()
+    })
 })
