@@ -159,6 +159,13 @@ div.text > span {
     }
 }
 
+#cart {
+    text-align: center;
+    font-size: 40px;
+    font-family: monospace;
+    margin-top: 0;
+}
+
 
 * {
     box-sizing: border-box;
@@ -283,13 +290,13 @@ ul > li {
     }
 
     div.social {
-        width: 95%;
+        width: 45%;
     }
     div.contact {
-        width: 95%;
+        width: 45%;
     }
     div.map {
-        width: 95%;
+        width: 45%;
     }
 
     @keyframes move {

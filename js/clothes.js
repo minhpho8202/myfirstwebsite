@@ -29,13 +29,8 @@ $(document).ready(function() {
         }, 1000)
     })
 
-    $("#gotobot").click(function() {
-        $("html, body").animate({
-            scrollTop: 1500
-        }, 1000)
-    })
-
-    $("div.text p").addClass("wow animate__backInDown")
+    $("div.items > div.item:nth-child(even)").addClass("wow animate__fadeInTopLeft")
+    $("div.items > div.item:nth-child(odd)").addClass("wow animate__fadeInTopRight")
 
     wow = new WOW(
         {
