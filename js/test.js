@@ -18,4 +18,4 @@ var checkDead = setInterval(function(){
         block.style.display = "none";
         alert("ncc");
     }
-})
+},10);
