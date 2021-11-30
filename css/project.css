@@ -93,7 +93,6 @@ h1.title::after{
     font-size: 20px;
 }
 
-
 .course {
     background-image: url(../hinhanh/blog1.jpg);
     background-repeat: no-repeat;
@@ -210,6 +209,23 @@ div.map {
     height: 40px;
 }
 
+.col-60 {
+    width: 60%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-40 > img {
+    width: 100%;
+}
+
+div.text1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -225,6 +241,18 @@ div.map {
     #gotobot {
         top: 500px;
         left:310px;
+    }
+
+    .col-60 {
+        width: 100%;
+    }
+    
+    .col-40 {
+        width: 100%;
+    }
+
+    section.col-70 {
+        width: 100%;
     }
 }
 
@@ -257,6 +285,14 @@ div.map {
     #gotobot {
         top: 300px;
         left:110px;
+    }
+
+    .col-60 {
+        width: 100%;
+    }
+    
+    .col-40 {
+        width: 100%;
     }
 }
 

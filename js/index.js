@@ -36,6 +36,8 @@ $(document).ready(function() {
     })
 
     $("div.text p").addClass("wow animate__fadeInLeft")
+    $("div.text img").addClass("wow animate__fadeInRight")
+
 
     wow = new WOW(
         {
