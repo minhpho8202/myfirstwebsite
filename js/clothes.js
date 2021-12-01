@@ -44,15 +44,57 @@ $(document).ready(function() {
       wow.init();
 
     
-    $(".btnAdd").click(function(){
-        var img = $("div.item > a > img").attr("src")
-        var name = $("div.item > a > h1").html()
-        var price = $("div.item > a > p").html()
+    // $(".btnAdd").click(function(){
+    //     var img = $("div.item > a > img").attr("src")
+    //     var name = $("div.item > a > h1").html()
+    //     var price = $("div.item > a > p").html()
         
-        $(".cart-items").prepend(`
-            <div class="cart-item">
-                <div class="col-20">
-                    <img src="${img}"/>
+    //     $(".cart-items").prepend(`
+    //         <div class="cart-item">
+    //             <div class="col-20">
+    //                 <img src="${img}"/>
+    //             </div>
+    //             <div class="col-20">
+    //                 <p>Name:</p>
+    //                 <span>${name}</span>
+    //             </div>
+    //             <div class="col-20">
+    //                 <p>Price:</p>
+    //                 <span>${price}</span>
+    //             </div>
+    //             <div class="col-20">
+    //                 <input type="button" value="Delete">
+    //             </div>
+    //         </div>
+    //     `)
+    // })
+
+    $("div.cart-items").on("click", "div.cart-item > div > input[type=button]", function(){
+        $(this).parent().parent().remove()
+    })
+
+})
+function init(){
+    var popIn = function(){
+        const btnAdd = document.querySelectorAll('.btnAdd');
+        for(let i = 0;i < btnAdd.length;i++){
+            btnAdd[i].addEventListener('click',function(){
+                pushIt(i);
+            });
+        }
+        function pushIt(i){
+            var item = document.querySelectorAll('div.item')[i];
+            var img = item.querySelector('a > img').getAttribute('src');
+            var name = item.querySelector('a > h1').innerText;
+            var price = item.querySelector('a > p').innerText;
+
+            var cartItem = function(img, name, price){
+                var itemWrap = document.createElement('div');
+                itemWrap.classList.add('cart-item');
+                itemWrap.innerHTML = 
+                `
+                <div class = "col-20">
+                    <img src = "${img}"/>
                 </div>
                 <div class="col-20">
                     <p>Name:</p>
@@ -62,17 +104,21 @@ $(document).ready(function() {
                     <p>Price:</p>
                     <span>${price}</span>
                 </div>
-                <div class="col-20">
+                <div class = "col-20">
                     <input type="button" value="Delete">
                 </div>
-            </div>
-        `)
-    })
-
-    $("div.cart-items").on("click", "div.cart-item > div > input[type=button]", function(){
-        $(this).parent().parent().remove()
-    })
-
-})
+                `;
+                return itemWrap;
+            }(img, name, price);
+            document.querySelector('.cart-items').prepend(cartItem);
+        }
+    }();
+    var deLete = document.querySelectorAll('div.cart-item > div > input[type=button]')
+    for (var i = 0;i < deLete.length;i++){
+        deLete[i].addEventListener('click', function () {
+            document.getElementsByClassName('cart-item').remove();
+        })
+    }
+}
 
 

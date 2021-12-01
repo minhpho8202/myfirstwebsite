@@ -121,6 +121,7 @@ div.item > img {
 .pic {
     width: 100%;
     box-shadow: #89CFF0 0px 0px 10px;
+    border-radius: 10px;
 }
 
 
@@ -258,6 +259,8 @@ input[type=button] {
     font-family: monospace;
     padding: 5px;
     font-weight: bold;
+    border-radius: 5px;
+    border-color: black;
 }
 
 div.cart-item {
@@ -272,6 +275,11 @@ div.cart-item {
 div.cart-item div > img {
     width: 70%;
     height: 80%;
+}
+
+input[type=button]:hover {
+    color: white;
+    background-color: black;
 }
 
 @media screen and (max-width: 1800px){

@@ -180,6 +180,7 @@ ul > li {
 .pic img {
     width: 100%;
     box-shadow: #89CFF0 0 0 10px;
+    border-radius: 10px;
 }
 
 div.thumb > div {
@@ -195,8 +196,16 @@ div.thumb {
     border: solid 2px black;
 }
 input {
+    font-family: monospace;
     padding: 5px;
     font-weight: bold;
+    border-radius: 5px;
+    border-color: black;
+}
+
+input[type=button]:hover {
+    color: white;
+    background-color: black;
 }
 
 select {
@@ -227,16 +236,20 @@ div.item:hover {
 
 div.item > a > img {
     width: 100%;
+    border-radius: 10px;
+    box-shadow: #89CFF0 0px 0px 10px;
 }
 
 div.item > h1 {
     font-family: monospace;
     text-align: center;
+    text-shadow: #89CFF0 0px 0px 10px;
 }
 
 div.item > p {
     font-family: monospace;
     text-align: center;
+    text-shadow: #89CFF0 0px 0px 10px;
 }
 
 @media screen and (max-width: 1800px){
