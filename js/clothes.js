@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
 
-        if ($(this).scrollTop() >= 1) {
+        if ($(this).scrollTop() >= 100) {
             $("#header0").css({
                 "position": "fixed",
                 "left" :8,

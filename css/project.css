@@ -79,6 +79,7 @@ ul > li > a {
 
 ul > li > a:hover {
     background-color: #89CFF0;
+    border-radius: 5px;
 }
 
 h1.title {
@@ -143,6 +144,8 @@ a.gts {
     0%{color: black;}
     100%{color: #89CFF0;}
 }
+
+
 
 #gototop {
     text-decoration: none;
@@ -215,6 +218,7 @@ div.map {
 
 .col-40 {
     width: 40%;
+    
 }
 
 .col-40 > img {
@@ -225,6 +229,8 @@ div.text1 {
     display: flex;
     flex-wrap: wrap;
 }
+
+
 
 * {
     box-sizing: border-box;
@@ -255,6 +261,8 @@ div.text1 {
         width: 100%;
     }
 }
+
+
 
 @media screen and (max-width: 600px){
     #brand {

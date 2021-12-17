@@ -95,7 +95,6 @@ ul.menubar > li {
     font-family: monospace;
     font-size: 20px;
 }
-
 ul.menubar > li > a {
     display: block;
     padding: 20px;
@@ -105,7 +104,7 @@ ul.menubar > li > a {
 div.item {
     width: 23%;
     margin: 1%;
-    transition: transform 0.3s;
+    
     position: relative;
 }
 
@@ -115,9 +114,11 @@ div.items{
     justify-content: flex-start;
 }
 
-div.item > img {
+div.item > a > img {
     width: 100%;
+    transition: transform 0.3s;
 }
+
 .pic {
     width: 100%;
     box-shadow: #89CFF0 0px 0px 10px;
@@ -125,7 +126,7 @@ div.item > img {
 }
 
 
-div.item:hover {
+div.item > a > img:hover {
     transform: skew(-2.5deg,2.5deg);
 }
 
@@ -151,15 +152,20 @@ div.text > span {
     position: relative;
 }
 
+div.text {
+    overflow: hidden;
+}
+
 @keyframes move {
     from {
-        left: -10%;
+        left: -15%;
     }
 
     to {
-        left: 90%;
+        left: 100%;
     }
 }
+
 
 #cart {
     text-align: center;
@@ -248,11 +254,14 @@ div.col-20 p {
     font-family: monospace;
     font-weight: bold;
     font-size: 20px;
+    text-shadow: #89CFF0 0px 0px 10px;
 }
 
 div.col-20 span {
     font-family: monospace;
     font-size: 20px;
+    text-shadow: #89CFF0 0px 0px 10px;
+
 }
 
 input[type=button] {
@@ -275,9 +284,11 @@ div.cart-item {
 div.cart-item div > img {
     width: 70%;
     height: 80%;
+    box-shadow: #89CFF0 0px 0px 10px;
+    border-radius: 15px;
 }
 
-input[type=button]:hover {
+input[type=button]:active {
     color: white;
     background-color: black;
 }
@@ -300,11 +311,11 @@ input[type=button]:hover {
 
     @keyframes move {
         from {
-            left: -30%;
+            left: -25%;
         }
     
         to {
-            left: 80%;
+            left: 100%;
         }
     }
 
@@ -374,11 +385,11 @@ input[type=button]:hover {
 
     @keyframes move {
         from {
-            left: -50%;
+            left: -60%;
         }
     
         to {
-            left: 60%;
+            left: 100%;
         }
     }
 }
