@@ -230,6 +230,14 @@ input {
     border-color: black;
 }
 
+textarea {
+    font-family: monospace;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: black;
+}
+
 input[type=button]:active{
     color: white;
     background-color: black;
@@ -278,6 +286,71 @@ div.item > p {
     font-family: monospace;
     text-align: center;
     text-shadow: #89CFF0 0px 0px 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+
+.modal__inner {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    top: 40%;
+    background-color: #FFFDD0;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family: monospace;
+
+}
+
+.hide {
+    display: none;
+}
+
+.feedback {
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    width: 30%;
+}
+
+.output {
+    width: 60%;
+    border: black 2px solid;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+}
+
+.output p {
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    text-shadow: #89CFF0 0px 0px 10px;
+    margin-right: 100px;
+    padding: 10px;
+}
+
+.deleteBtn {
+    align-self: center;
 }
 
 @media screen and (max-width: 1800px){

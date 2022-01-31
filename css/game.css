@@ -1,6 +1,6 @@
 body {
-    /* background-color: #FFFDD0; */
-    background-image: linear-gradient(black,white);
+    background-color: #FFFDD0;
+    /* background-image: linear-gradient(black,white); */
     background-repeat: no-repeat;
     color: black;
     font-family: Arial, Helvetica, sans-serif;

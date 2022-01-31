@@ -72,13 +72,48 @@
                       <li>Size 3 : Chiều Cao từ 1m70-  1m77 , Câng Nặng Dưới 80 kg</li>
                       <li>Size 4 : Chiều Cao Trên 1m72, Cân Nặng dưới  100 kg</li>
                   </ul>
+                  <br>
                   <input type="text" id="chieuCao" placeholder="Chiều Cao (cm)" />
                   <input type="text" id="canNang" placeholder="Cân Nặng (kg)" />
-                  <input type="button" value="Check" onclick="sizeCheck()" />
+                  <input type="button" value="Check" id="checkBtn"/>
                   <br>
                   <br>
-                  <input type="button" value="ADD TO CART" onclick="alert('Đã Thêm Vào Giỏ Hàng')"/>
+                  <input type="button" value="ADD TO CART" class="open" />
+                  <div class="modal hide">
+                    <div class="modal__inner">
+                        <div class="modal__body">
+                            <p><b>Đã thêm vào giỏ hàng</b></p>
+                        </div>
+                        <div class="modal__footer">
+                            <input type="button" value="Close" class="close">
+                        </div>
+                    </div>
                 </div>
+                </div>
+          </div>
+          <hr color="black">
+          <p>Feedbacks</p>
+          <div class="feedback">
+          <div class="input">
+          <input type="text" id="name" placeholder="Name" />
+          <br>
+          <br>
+          <input type="text" id="texts" placeholder="Texts" />
+          <br>
+          <br>
+          <input type="button" value="Send" id="send">
+          </div>
+          <div class="output">
+            <!-- <div class="content">
+            <div class="user"><p>Name:</p>
+            <p>aa</p>
+          </div>
+            <div class="words"><p>Feedback:</p>
+              <p>aa</p>
+            </div>
+            <div class="deleteBtn"><input type="button" value="Delete"></div> -->
+            </div>
+          </div>
           </div>
           <hr color="black">
           <p>Wears it with</p>
