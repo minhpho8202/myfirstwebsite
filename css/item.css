@@ -373,6 +373,10 @@ div.item > p {
     div.item {
         width: 30%;
     }
+
+    div.feedback {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -413,5 +417,8 @@ div.item > p {
     }
     div.map {
         width: 45%;
+    }
+    div.feedback {
+        width: 100%;
     }
 }

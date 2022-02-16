@@ -15,7 +15,7 @@ $(document).ready(function(){
             if (blockLeft < 80 && blockLeft > 0 && characterTop >= 50) {
                 block.style.animation = "none";
                 block.style.display = "none";
-                alert("u lose");
+                alert("Ban da thua");
             }
         },10);
 })
